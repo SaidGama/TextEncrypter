@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador</title>
+    <style>
+        body {
+            background-color: #635d58c5;
+        }
+        body h1 {
+            text-align: center;
+        }
+        img {
+            max-width: 50%;
+            height: auto;
+        }
+        .CajaPrincipal {
+            height: 250px;
+            width: 80%;
+            background-color: black;
+            box-shadow: 0 15px 25px rgba(0,0,0,.6);
+            border-radius: 10px;
+            margin: auto;
+            margin-bottom: 50px;
+            margin-top: 50px;
+        }
+        .toolbar {
+            background: #b4b4b4;
+            opacity: 0.9;
+            width: auto;
+            height: 3%;
+            margin: 10px auto;
+            padding: 1%;
+            border-radius: 7px 7px 0px 0px;
+            display: flex;
+        }
+        .rojo {
+            display: flex;
+            width: 8px;
+            height: 8px;
+            background: #ce0f0f;
+            border-radius: 50%;
+            margin: 0 5px 0 0; 
+            border-color: black;
+                     
+        }
+        .amarillo {
+            display: flex;
+            width: 8px;
+            height: 8px;
+            background: #d3dd18;
+            border-radius: 50%;
+            margin: 0 5px 0 0;
+        }
+        .verde {
+            display: flex;
+            width: 8px;
+            height: 8px;
+            background: #0ae40a;
+            border-radius: 50%;
+            margin: 0 5px 0 0;
+        }
+        .terminal {
+            margin: 0 20px ;
+            line-height: 2;
+            display: flex;
+            font-size: medium;
+        }
+        .prompt {
+            color: #00fe00;
+            font-family: monospace;
+            line-height: 2;
+            margin-right: 5px;
+            margin-top: 3px;
+        }
+        .lineainput {
+            flex: 1;
+        }
+        .input {
+            border: none;
+            padding: 0;
+            margin: 0;
+            background: black;
+            color: #00fe00d4;
+            width: 99%;
+            font-family: monospace;
+            margin-left: 2px;
+            line-height: 2;
+            font-size: medium;
+            outline: none;
+        }
+        .Botones {
+            text-align: center;
+        }
+        .Caja2 {
+            height: 250px;
+            width: 80%;
+            background: rgba(0,0,0,.5);
+            box-shadow: 0 15px 25px rgba(0,0,0,.6);
+            border-radius: 10px;
+            margin: auto;   
+            margin-bottom: 100px;
+        }
+        .Caja2 textarea {
+            border: none;
+            border-radius: 10px;
+            resize: none;   
+            width: 90%;
+            height: 60%;
+            margin-left: 5%;
+            margin-right: 5%;
+            padding: 12px 20px;
+            box-sizing: border-box;
+            font-size: x-large;
+            background-color: #f8f8f8;
+        }
+        .Caja2 textarea:focus{
+            outline: none;
+        }
+        footer {
+            text-align: center;
+            background: rgb(1, 175, 21);
+        }
+    </style>
+</head>
+<body>
+        <div class="header">
+            <img src="unsecured2.png" width="80" height="80">
+            <h1>> Encriptador </h1>
+        </div>
+        
+        <div class="CajaPrincipal">
+            <div class="toolbar">
+                <div class="rojo"></div>
+                <div class="amarillo"></div>
+                <div class="verde"></div>
+            </div>
+            <div class="terminal">
+                <span class="prompt">Bienvenido, para encriptar o desencriptar un texto insertalo en la entrada de la terminal
+                    y despues presiona el boton de abajo que deseas</span>
+            </div>
+            <div class="terminal">
+                <span class="prompt">~$</span>
+                <div class="lineainput">
+                    <input class="input" type="text" autofocus placeholder="Escribe aqui">
+                </div>
+            </div>
+        </div>
+        <div class="Botones">
+            <button class="boton1" type="button" name="boton1" onclick="encriptar()">ENCRIPTAR</button>
+            <button class="boton2" type="button" name="boton2" onclick="desencriptar()">DESENCRIPTAR</button>
+        </div>
+        <div class="Caja2">
+            <h1 class="Titulo"> > Encriptador</h1>
+            <textarea rows="8" cols="50" readonly placeholder="Aqui veras el resultado de tu texto encriptado o desencriptado."></textarea>
+        </div>
+        <footer>
+            test footer
+        </footer>
+    
+</body>
+</html>
